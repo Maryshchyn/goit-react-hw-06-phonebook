@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FormListUl = styled.ul`
+export const ContactListUl = styled.ul`
 display: flex;
 align-items: center;
 flex-direction: column;

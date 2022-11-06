@@ -1,12 +1,12 @@
 
-import {FormListUl} from './FormList.styled'
-import {FormItem} from '../FormItem/FormItem';
+import {ContactListUl} from './ContactList.styled'
+import {ContactItem} from '../ContactItem/ContactItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from '../../redux/contactSlice';
 
 
 
-export const FormList = () => {
+export const ContactList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(state => state.contacts.contacts);
   const filterContact = useSelector(state => state.contacts.filter);
@@ -20,9 +20,9 @@ export const FormList = () => {
   
 
   return (
-    <FormListUl>
+    <ContactListUl>
       {visibleContacts.map(({ id, name, number }) => (
-        <FormItem
+        <ContactItem
           id={id}
           key={id}
           name={name}
@@ -30,7 +30,7 @@ export const FormList = () => {
           onDelete={handleDelete}
         />
       ))}
-    </FormListUl>
+    </ContactListUl>
   );
 };
 

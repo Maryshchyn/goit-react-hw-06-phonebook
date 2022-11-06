@@ -1,6 +1,6 @@
 
 import {Form} from './Form/Form'
-import {FormList} from './FormList/FormList'
+import {ContactList} from './ContactList/ContactList'
 
 import { Title } from './Title/Title';
 import { Contacts } from './Contacts/Contacts';
@@ -15,7 +15,7 @@ return (
         <Form  />
         <Contacts text='Contacts' />
         <Filter />
-        <FormList />
+        <ContactList />
       </div>
    )
 
